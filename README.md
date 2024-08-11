@@ -1,1 +1,8 @@
-# kayleeisokay.github.io
+# Data Scientist
+
+### Education
+Stanford
+
+### Work Experience
+
+### Projects
