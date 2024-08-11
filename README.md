@@ -7,4 +7,5 @@ Stanford
 
 ### Projects
 
-[link to About Page](about.md)
+[About Us](about.md)
+
