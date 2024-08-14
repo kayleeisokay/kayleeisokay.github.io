@@ -155,7 +155,7 @@ $$
 Given the data we observed, our expected number of bike shares per hour will be 393.5769, using the MAP method.
 
 ## Footnotes
-When $\theta$ is fixed then $f(X | \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
+1. When $\theta$ is fixed then $`f(X | \theta)`$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
 
 ## Helpful Links
 1. https://en.wikipedia.org/wiki/Conjugate_prior
