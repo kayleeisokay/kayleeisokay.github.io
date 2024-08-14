@@ -36,7 +36,7 @@ Conjugate distributions make Bayesian updates easy because all we need to do is 
 
 For this code example, we'll use the London Bike Sharing dataset from [Kaggle](https://www.kaggle.com/datasets/hmavrodiev/london-bike-sharing-dataset). We'll subset the data for `2015-01-04`. The frequency of the data is hourly. Let us denote $X$ as the count of bike shares per hour.
 
-```{r}
+~~~ r
 df <- read.csv("data/london_merged.csv")
 df <- df[1:24, ]
 
@@ -46,20 +46,19 @@ hist(
   main= "Distribution of Bike Shares per Hour",
   col = "lightblue"  
 )
-```
+~~~
 
 ![Histogram](./img/bike_hist.png)
 
 From the histogram we see that the distribution of X is strictly positive and is discrete (integers) which makes it a good candidate for a Poisson model. Let's assume the prior is $\Lambda \sim Gamma(1000, 2)$. We apply the updating rules to get the posterior distribution for $\Lambda$.
 
-```{r}
-```{r}
+~~~ r
 a <- 1000
 b <- 2
 
 a_new <- a + sum(df$cnt)
 b_new <- b + nrow(df)
-```
+~~~
 
 We find that the posterior distribution to be
 
@@ -69,7 +68,7 @@ $$
 
 Now we graph the prior and posterior distributions.
 
-```{r}
+~~~ r
 #Graphing Parameters
 x <- 1:10000 / 10 
 ylim <- c(0, .12)
@@ -109,7 +108,7 @@ legend(
   lty = 1, 
   cex = cex.axis 
 )
-```
+~~~
 
 ![Histogram](./img/bike_post_prior.png)
 
