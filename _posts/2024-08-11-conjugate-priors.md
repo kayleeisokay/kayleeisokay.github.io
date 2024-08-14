@@ -20,11 +20,11 @@ $$
 f(\theta | X) \propto f(X|\theta) f(\theta).
 $$
 
-$f(\theta | X)$ is the **posterior**. This is the distribution of $\theta$ *after* observing data. 
+1.. $f(\theta | X)$ is the **posterior**. This is the distribution of $\theta$ *after* observing data. 
 
-$f(X|\theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$.
+2.. $f(X|\theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$.
 
-$f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
+3.. $f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
 
 ## Conjugate Distributions
 
