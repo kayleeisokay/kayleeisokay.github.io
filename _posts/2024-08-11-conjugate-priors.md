@@ -48,7 +48,7 @@ hist(
 )
 ~~~
 
-![Histogram](./_posts/img/bike_hist.png)
+<img src="/_posts/img/bike_hist.png">
 
 From the histogram we see that the distribution of X is strictly positive and is discrete (integers) which makes it a good candidate for a Poisson model. Let's assume the prior is $\Lambda \sim Gamma(1000, 2)$. We apply the updating rules to get the posterior distribution for $\Lambda$.
 
@@ -110,7 +110,7 @@ legend(
 )
 ~~~
 
-![Histogram](/img/bike_post_prior.png)
+<img src="/_posts/img/bike_post_prior.png">
 
 ### Prediction
 
