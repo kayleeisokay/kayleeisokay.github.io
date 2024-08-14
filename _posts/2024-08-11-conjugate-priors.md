@@ -1,5 +1,6 @@
 ---
 layout: post
+usemathjax: true
 title: Conjugate Distributions
 categories: [Statistics]
 ---
