@@ -1,2 +1,6 @@
 _archive/
 .DS_Store
+.Rproj.user
+.RData
+.Rhistory
+code/

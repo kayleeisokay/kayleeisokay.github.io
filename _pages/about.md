@@ -8,6 +8,6 @@ permalink: /about/
 
 In terms of academics, I love statistics, specifically causal inference and health economics. Machine learning is interesting too, a close second. 
 
-Outside of academics, I'm a fan of all things Korea related like K-Dramas, K-Pop, fashion, makeup, and practicing Korean. Favorite drama is Queen of Tears 👑 and favorite group is BTS 💜 (Spring Day will never get old). I'm also an animal lover as such I frequent acquariums, zoos and own many plushies 🐕.
+Outside of academics, I'm a fan of all things Korea related like K-Dramas, K-Pop, fashion, makeup, and practicing Korean. Favorite drama is Queen of Tears 👑 and favorite group is BTS 💜 (Spring Day will never get [old](https://www.melon.com/chart/index.htm)). I'm also an animal lover as such I frequent acquariums, zoos and own many plushies 🐕.
 
 My hope for this blog is to document interesting concepts I've learned, sprinkled with posts about life. I hope it can be something I can look back on in the future.
