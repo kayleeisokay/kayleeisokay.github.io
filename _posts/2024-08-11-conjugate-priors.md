@@ -20,9 +20,9 @@ $$
 f(\theta | X) \propto f(X|\theta) f(\theta).
 $$
 
-1. $f(\theta \text{|} X)$ is the **posterior**. This is the distribution of $\theta$ *after*  observing data. 
-2. $f(X \text{|} \theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$. 
-3. $f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
+- $f(\theta | X)$ is the **posterior**. This is the distribution of $\theta$ *after*  observing data. 
+- $f(X|\theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$. 
+- $f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
 
 ## Conjugate Distributions
 
@@ -48,7 +48,7 @@ hist(
 )
 ~~~
 
-![Histogram](./img/bike_hist.png)
+![Histogram](./_posts/img/bike_hist.png)
 
 From the histogram we see that the distribution of X is strictly positive and is discrete (integers) which makes it a good candidate for a Poisson model. Let's assume the prior is $\Lambda \sim Gamma(1000, 2)$. We apply the updating rules to get the posterior distribution for $\Lambda$.
 
@@ -110,7 +110,7 @@ legend(
 )
 ~~~
 
-![Histogram](./img/bike_post_prior.png)
+![Histogram](/img/bike_post_prior.png)
 
 ### Prediction
 
@@ -155,7 +155,7 @@ $$
 Given the data we observed, our expected number of bike shares per hour will be 393.5769, using the MAP method.
 
 ## Footnotes
-1. When $\theta$ is fixed then $f(X \text{|} \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
+1. When $\theta$ is fixed then $f(X | \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
 
 ## Helpful Links
 1. https://en.wikipedia.org/wiki/Conjugate_prior
