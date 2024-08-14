@@ -20,8 +20,8 @@ $$
 f(\theta | X) \propto f(X|\theta) f(\theta).
 $$
 
-1. $f(\theta | X)$ is the **posterior**. This is the distribution of $\theta$ *after*  observing data. 
-2. $f(X|\theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$. 
+1. $f(\theta \text{|} X)$ is the **posterior**. This is the distribution of $\theta$ *after*  observing data. 
+2. $f(X \text{|} \theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$. 
 3. $f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
 
 ## Conjugate Distributions
@@ -155,7 +155,7 @@ $$
 Given the data we observed, our expected number of bike shares per hour will be 393.5769, using the MAP method.
 
 ## Footnotes
-1. When $\theta$ is fixed then $f(X | \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
+1. When $\theta$ is fixed then $f(X \text{|} \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
 
 ## Helpful Links
 1. https://en.wikipedia.org/wiki/Conjugate_prior
