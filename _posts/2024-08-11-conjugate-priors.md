@@ -22,7 +22,7 @@ $$
 
 1. $f(\theta \vert X)$ is the **posterior**. This is the distribution of $\theta$ *after* observing data. 
 
-2. $f(X \vert \theta)$ is the **likelihood function**. This is a function is the joint probability distribution constructed by evaluating $f(X|\theta)$ at each data point $X=x$. 
+2. $f(X \vert \theta)$ is the **likelihood function**. This is a function is the joint probability distribution constructed by evaluating $f(X \vert \theta)$ at each data point $X=x$. 
 
 3. $f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
 
@@ -176,7 +176,7 @@ Given the data we observed, our expected number of bike shares per hour will be 
 
 #### Which $\theta$ is more likely, $\theta$ = 5 or $\theta = 10$ for the observed data $X = [12, 2, 23]$? Assume that the data is poisson distributed.
 
-Recall that the likelihood function is the joint probability distribution constructed by evaluating $f(X|\theta)$ at each data point $X=x$. This means we need to multiply the pmfs together, where the pmf is defined as
+Recall that the likelihood function is the joint probability distribution constructed by evaluating $f(X \vert \theta)$ at each data point $X=x$. This means we need to multiply the pmfs together, where the pmf is defined as
 
 $$
 g(k;\lambda) = P(X = k) =  \frac{\lambda^k e^{\lambda}}{k!}.
@@ -210,9 +210,9 @@ Fom the output above, we see that the likelihood for $\theta = 10$ is greater th
 ## Footnotes
 1.. The denominator can be seen as the marginal distribution $f_X(x)$. When we integrate $\int_{\theta} f(X, \theta) d\theta$ over the entire support of $\theta$ we essentially "collapse" the $\theta$ dimension, yielding the distribution for only $X$. I might make a post on this later.
 
-2.. When $\theta$ is fixed then $f(X | \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize 🫠.
+2.. When $\theta$ is fixed then $f(X \vert \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize 🫠.
 
 ## Helpful Links
-1. https://en.wikipedia.org/wiki/Conjugate_prior
-2. https://www.kaggle.com/datasets/hmavrodiev/london-bike-sharing-dataset
-3. https://en.wikipedia.org/wiki/Likelihood_function
+1. [https://en.wikipedia.org/wiki/Conjugate_prior](https://en.wikipedia.org/wiki/Conjugate_prior)
+2. [https://www.kaggle.com/datasets/hmavrodiev/london-bike-sharing-dataset](https://www.kaggle.com/datasets/hmavrodiev/london-bike-sharing-dataset)
+3. [https://en.wikipedia.org/wiki/Likelihood_function](https://en.wikipedia.org/wiki/Likelihood_function)
