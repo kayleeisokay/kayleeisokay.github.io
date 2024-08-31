@@ -12,7 +12,6 @@ Outside of academics, I'm an animal lover as such I frequent acquariums, zoos, c
 
 
 <img src="/assets/img/seoul.jpg">
-{:.image-caption}
 *The caption for my image*
 
  My hope for this blog is to document interesting concepts I've learned, sprinkled with posts about life. I hope it can be a collection of things I can look back on in the future.
