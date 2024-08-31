@@ -174,7 +174,7 @@ Given the data we observed, our expected number of bike shares per hour will be 
 
 ### Toy Exercise
 
-**Which $\theta$ is more likely, $\theta$ = 5 or $\theta = 10$ for the observed data $X = [12, 2, 23]$? Assume that the data is poisson distributed.**
+**Which $\theta$ is more likely, $\theta = 5$ or $\theta = 10$ for the observed data $X = [12, 2, 23]$? Assume that the data is Poisson distributed.**
 
 Recall that the likelihood function is the joint probability distribution constructed by evaluating $f(X \vert \theta)$ at each data point $X=x$. This means we need to multiply the pmfs together, where the pmf is defined as
 
