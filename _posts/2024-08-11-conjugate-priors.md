@@ -54,7 +54,7 @@ hist(
 
 From the histogram we see that the distribution of X is strictly positive and is discrete (integers) which makes it a good candidate for a Poisson model. Let's assume the prior is $\Lambda \sim Gamma(1000, 2)$. 
 
-From wikipedia we see that the updating rules are 
+From [Wikipedia](https://en.wikipedia.org/wiki/Conjugate_prior) we glean the updating rules which are 
 
 $$
 \alpha + \sum_{i=1}^n x_i 
