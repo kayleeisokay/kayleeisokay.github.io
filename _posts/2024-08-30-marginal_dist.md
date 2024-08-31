@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conjugate Distributions
+title: Marginal Distributions
 categories: [Statistics]
 ---
 
