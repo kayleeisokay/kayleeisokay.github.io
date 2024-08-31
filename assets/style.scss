@@ -230,9 +230,10 @@ p > img {
 }
 
 img + em { 	
+  font-size: 12px;
+  color: $lightGray;
   display: block; 
   text-align: center; 
-  color: blue;
 }
 
 .date {
