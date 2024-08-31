@@ -12,9 +12,9 @@ $$
 f(\theta | X) =  \frac{f(X|\theta) f(\theta)}{\int f(X, \theta) d\theta}.
 $$
 
-Here $X$ is just a random variable and we will use $x$ to denote a realization of $X$. For example if we observe data 1, 4, then we can write $X_1 = 1$, $X_2 = 4$. Here $\theta$ represents a parameter of a distribution. For example $Poisson(\lambda)$, $\lambda$ is the parameter.
+With regards to notation, $X$ is a random variable and $x$ is a realization of $X$. For example if we observe the data to be 1, 4, then $X_1 = 1$ and $X_2 = 4$. The subscripts denote the observation number. Next $\theta$ represents a parameter of a distribution. For example $Poisson(\lambda)$, $\lambda$ is the parameter.
 
-To simpifly the expression, we can drop the normalization constant in the denominator because we are only concerned about proportionality. The normalization constant ensures the result we get integrates to 1 but it does not change the shape of the distribution, which means it does not affect our inference. Now we get 
+To simplify the expression, we can drop the normalization constant in the denominator because we are only concerned with proportionality.$\text{}^{[1]}$ The normalization constant ensures the final result integrates to 1 but it does not change the shape of the distribution, which means it will not affect our inference. Now we get 
 
 $$
 f(\theta | X) \propto f(X|\theta) f(\theta).
@@ -22,7 +22,7 @@ $$
 
 1. $f(\theta \vert X)$ is the **posterior**. This is the distribution of $\theta$ *after* observing data. 
 
-2. $f(X \vert \theta)$ is the **likelihood function**. This is function is constructed by the joint probability distribution evaluated at each data point $X=x$. Trust me this will make more sense when we do an example. As an undergrad this went over my $\text{head}^1$. 
+2. $f(X \vert \theta)$ is the **likelihood function**. This is a function is the joint probability distribution constructed by evaluating $f(X|\theta)$ at each data point $X=x$. 
 
 3. $f(\theta)$ is the **prior**. This is the distribution of $\theta$ *before* observing data. 
 
@@ -52,7 +52,21 @@ hist(
 
 <img src="/assets/img/bike_hist.png">
 
-From the histogram we see that the distribution of X is strictly positive and is discrete (integers) which makes it a good candidate for a Poisson model. Let's assume the prior is $\Lambda \sim Gamma(1000, 2)$. We apply the updating rules to get the posterior distribution for $\Lambda$.
+From the histogram we see that the distribution of X is strictly positive and is discrete (integers) which makes it a good candidate for a Poisson model. Let's assume the prior is $\Lambda \sim Gamma(1000, 2)$. 
+
+From wikipedia we see that the updating rules are 
+
+$$
+\alpha + \sum_{i=1}^n x_i 
+$$
+
+and 
+
+$$
+\beta + n.
+$$
+
+We apply the updating rules to get the posterior distribution for $\Lambda$.
 
 ~~~ r
 a <- 1000
@@ -156,8 +170,47 @@ $$
 
 Given the data we observed, our expected number of bike shares per hour will be 393.5769, using the MAP method.
 
+## Appendix: Likelihood Function
+
+### Toy Exercise
+
+#### Which $\theta$ is more likely, $\theta$ = 5 or $\theta = 10$ for the observed data $X = [12, 2, 23]$? Assume that the data is poisson distributed.
+
+Recall that the likelihood function is the joint probability distribution constructed by evaluating $f(X|\theta)$ at each data point $X=x$. This means we need to multiply the pmfs together, where the pmf is defined as
+
+$$
+g(k;\lambda) = P(X = k) =  \frac{\lambda^k e^{\lambda}}{k!}.
+$$
+
+To compute the likelihood for $\theta = 5$ we have
+
+$$
+g(12;5) * g(2;5) * g(23;5).
+$$
+
+For the likelihood using $\theta = 10$ we have
+
+$$
+g(12;10) * g(2;10) * g(23;10).
+$$
+
+Luckily we have R so the computation is pretty simple.
+
+~~~ r
+> dpois(12, 5) * dpois(2, 5) * dpois(23, 5) 
+[1] 8.986934e-13
+
+> dpois(12, 10) * dpois(2, 10) * dpois(23, 10)
+[1] 3.778367e-08
+~~~
+
+Fom the output above, we see that the likelihood for $\theta = 10$ is greater than the likelihood value for $\theta = 5$. 
+
+
 ## Footnotes
-1.. When $\theta$ is fixed then $f(X | \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize regrettably 🫠.
+1.. The denominator can be seen as the marginal distribution $f_X(x)$. When we integrate $\int_{\theta} f(X, \theta) d\theta$ over the entire support of $\theta$ we essentially "collapse" the $\theta$ dimension, yielding the distribution for only $X$. I might make a post on this later.
+
+2.. When $\theta$ is fixed then $f(X | \theta)$ is a pdf when $X$ is fixed then it is a likelihood function. This honestly took me a bit to realize 🫠.
 
 ## Helpful Links
 1. https://en.wikipedia.org/wiki/Conjugate_prior
