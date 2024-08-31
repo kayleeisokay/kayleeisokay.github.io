@@ -950,6 +950,13 @@ Modules - reusable parts of our design
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
+
+.image-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: lightgrey;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;

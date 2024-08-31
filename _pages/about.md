@@ -10,10 +10,10 @@ In terms of academics, I love statistics, specifically causal inference and heal
 
 Outside of academics, I'm an animal lover as such I frequent acquariums, zoos, cafes and own many plushies 🐕. I'm also a fan of all things Korea related like K-Dramas, K-Pop, fashion, makeup, and practicing Korean. Favorite drama is Queen of Tears 👑 and favorite group is BTS 💜 (Spring Day will never get [old](https://www.melon.com/chart/index.htm)). 
 
-<figure>
-    <img src="/assets/img/seoul.jpg">
-    <figcaption> Seoul 2024 </figcaption> 
-<figure>
+
+<img src="/assets/img/seoul.jpg">
+{:.image-caption}
+*The caption for my image*
 
  My hope for this blog is to document interesting concepts I've learned, sprinkled with posts about life. I hope it can be a collection of things I can look back on in the future.
 
