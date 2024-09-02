@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marginal Distributions
+title: Marginal and Joint Distributions - WIP
 categories: [Statistics]
 ---
 
