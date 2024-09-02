@@ -165,12 +165,15 @@ First we find the normalizing constant by solving for $C$. We do this by integra
 $$
 C * \int_0^1 \int_{x^3}^{\sqrt{x}}  4xy - y^3 ~dy~dx = 1
 $$
+
 $$
 C * \int_0^1 (2xy^2 - \frac{y^4}{3}) \Big|^{\sqrt{x}}_{x^3} = 1
 $$
+
 $$
 C * \int_0^1 \frac{7}{4} x^2 - 2x^7 + \frac{1}{4}x^{12} dx = 1
 $$
+
 $$
 C (\frac{7}{12}x^3 - \frac{1}{4}x^8 + \frac{1}{52} x^{13}) \Big|^1_0 = \frac{55}{156}
 $$
@@ -194,6 +197,7 @@ For $f_Y(y)$ we flip the order of integration, so then
 $$
 f_Y(y) = \frac{156}{55} \int_0^1 \int_{y^2}^{y^{1/3}}  4xy - y^3 ~dx~dy
 $$
+
 $$
 = \frac{156}{55} \int_0^1 2y^{5/3} - 2y^5 - y^{10/3} + y^5 dy
 $$
@@ -214,7 +218,7 @@ Answer:
 
 The integral for the joint distribution turns out to be pretty intractable so we have to resort to an approximation technique like rejection sampling to solve this problem.
 
-I won't go into detail here on rejection sampling but the idea is that we randomly sample from the support of $X$ and $Y$ to get candidate points $x^*$ and $y^*$. We then randomly sample $u$ from a uniform distribution between 0 and 1 and accept samples $(x^*,y^*)$ where $u \leq f_{X,Y}(x^*,y^*)$.
+I won't go into detail here on rejection sampling but the idea is that we randomly sample from the support of $X$ and $Y$ to get candidate points $x^{*}$ and $y^{*}$. We then randomly sample $u$ from a uniform distribution between 0 and 1 and accept samples $(x^{*},y^{*})$ where $u \leq f_{X,Y}(x^{*},y^{*})$.
 
 Using this method we get the $P(0 \leq X \leq 0.5, 0 \leq Y \leq 0.5)$ to be around 0.29122.
 
