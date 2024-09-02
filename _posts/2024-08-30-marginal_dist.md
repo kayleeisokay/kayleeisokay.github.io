@@ -218,7 +218,7 @@ Answer:
 
 The integral for the joint distribution turns out to be pretty intractable so we have to resort to an approximation technique like rejection sampling to solve this problem.
 
-I won't go into detail here on rejection sampling but the idea is that we randomly sample from the support of $X$ and $Y$ to get candidate points $x^{*}$ and $y^{*}$. We then randomly sample $u$ from a uniform distribution between 0 and 1 and accept samples $(x^{*},y^{*})$ where $u \leq f_{X,Y}(x^{*},y^{*})$.
+I won't go into detail here on rejection sampling but the idea is that we randomly sample from the support of $X$ and $Y$ to get candidate points $x^{c}$ and $y^{c}$. We then randomly sample $u$ from a uniform distribution between 0 and 1 and accept samples $(x^{c},y^{c})$ where $u \leq f_{X,Y}(x^{c},y^{c})$.
 
 Using this method we get the $P(0 \leq X \leq 0.5, 0 \leq Y \leq 0.5)$ to be around 0.29122.
 
