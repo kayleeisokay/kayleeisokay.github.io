@@ -6,35 +6,39 @@ categories: [Statistics]
 
 # Marginal and Joint Distributions
 
-## Distribution of Single Random Variable
+## Section 1. Distribution of Single Random Variable
 
-In the simplest example we have only one random variable. Here for example we have synthetic data that represents the grades for a single class. With this distribution we can calculate statistics such as the mean or variance. The graph below is an example of a distribution with just one random variable using synthetic data for class grades.
+In simple cases, we have only one random variable. In the example below, we have synthetic data representing grades for a single class. Using this distribution we can calculate statistics such as the mean or variance. The height of each bar represents the frequency of grades, so roughly 60 people got an A in the class.
 
-<img src="/assets/img/grades_dist.png">
+<img src="/assets/img/math_grades_dist.png">
 
-However in many real world cases we are often interested in the distribution of two or more random variables modeled together. For example what is the distribution of grades for two classes? 
+However in many real world cases we are often interested in the distribution of two or more random variables modeled together. For example we may ask what is the distribution of grades for two classes? 
 
-The distribution of two or more random variables together is called the joint distribution, often denoted as $f_{X, Y}(x, y)$ for a random variables $X$ and $Y$. This can be generalized to $n$ amount of random variables, so a joint distribution can look like $f_{X, Y, Z}(x, y, z)$. 
+The distribution of two or more random variables is called the joint distribution, often denoted as $f_{X, Y}(x, y)$ for random variables $X$ and $Y$. This definition can be generalized to $n$ amount of random variables, so a joint distribution can look like $f_{X, Y, Z}(x, y, z)$ or even $f_{A, B, C, D}(a, b, c, d)$. 
 
-Random variables can be discrete or continuous. We will first take a look at the discrete case.
+As one may know, random variables can be discrete or continuous. Nevertheless, the definition applies to both cases. First, we will look at the discrete case and follow with a continuous case.
 
-## Discrete Case 
+## Section 2. Discrete Case 
 
 ### Table Representation of Joint Distribution
 
-Let's say we are interested in not just the distribution of grades for a single class but the distribution of grades for two classes. We want to know the probability of getting A's in both classes, failing both or getting one A and one B. These types of questions can be answered with a joint distribution. 
+Let's say we are interested in the distribution of grades for not one but two classes, Math and English. Quantities such as the probability of getting A's in both classes or the probability of failing both classes are quantities that can be measured using a joint distribution. 
 
-Let's do an example. Let $X$ be the random variable for Math grades and $Y$ be the random variable for English grades. Both $X$ and $Y$ take on values in the set {A, B, C, D, F}. Reading off the table we can say that the probability of getting A's in both classes is 0.03, while the probability of getting an A in math and a B in English is 0.13.
+Let's do an example. Let $X$ be the random variable for Math grades and $Y$ be the random variable for English grades. The following graph depicts the distribution for English grades.
 
-|X = Math, Y = English   | A    | B    | C    | D    | F    |
-|---|------|------|------|------|------|
-| A | 0.03 | 0.13 | 0.04 | 0.01 | 0    |
-| B | 0.04 | 0.17 | 0.04 | 0.03 | 0.03 |
-| C | 0.04 | 0.18 | 0.06 | 0.02 | 0.01 |
-| D | 0.01 | 0.08 | 0.02 | 0.02 | 0    |
-| F | 0    | 0.02 | 0.01 | 0    | 0    |
+<img src="/assets/img/eng_grades_dist.png">
 
-Note that the values in the table must sum to 1 because the joint distribution is a proper probability distribution.
+Both $X$ and $Y$ take on values in the set {A, B, C, D, F}. The table below represents the joint distribution of $X$ and $Y$, where the columns are grades for $Y$ and the rows are grades for $X$. Reading off the table we can say that the probability of getting A's in both classes is 0.03, while the probability of getting an A in math and a B in English is 0.13.
+
+|X = Math, Y = English   | A      | B      | C      | D      | F      | 
+|---|--------|--------|--------|--------|--------|
+| A | 0.01   | 0.12   | 0.0367 | 0.0367 | 0.0133 |
+| B | 0.05   | 0.15   | 0.05   | 0.03   | 0.0267 |
+| C | 0.03   | 0.1667 | 0.04   | 0.05   | 0.02   |
+| D | 0.0067 | 0.0667 | 0.03   | 0.0167 | 0.0133 |
+| F | 0      | 0.02   | 0.0067 | 0.0067 | 0.0033 |
+
+Note that all cell values in the table must sum to 1 because the joint distribution is a proper probability distribution. The tile plot below is a visualization of the joint distribution table.
 
 <img src="/assets/img/tile_plot.png">
 
@@ -52,22 +56,24 @@ $$
 p_Y(y_j) = \sum_i p(x_i, y_j).
 $$
 
-We can rewrite the table to include the marginal distributions.
+We can rewrite the table of $f_{X,Y}(x,y)$ to include the marginal distributions.
 
-|X = Math, Y = English   | A    | B    | C    | D    | F    | $p_Y(y)$ |
-|---|------|------|------|------|------| ------ |
-| A | 0.03 | 0.13 | 0.04 | 0.01 | 0    | **0.21** | 
-| B | 0.04 | 0.17 | 0.04 | 0.03 | 0.03 | **0.31** |
-| C | 0.04 | 0.18 | 0.06 | 0.02 | 0.01 | **0.31** |
-| D | 0.01 | 0.08 | 0.02 | 0.02 | 0    | **0.13** |
-| F | 0    | 0.02 | 0.01 | 0    | 0    | **0.03** |
-| $p_X(x)$ | **0.12**    | **0.58** | **0.17** | **0.08**    | **0.04**    |
+| X = Math, Y = English  | A      | B      | C      | D      | F      | $p_X(x)$ | 
+|---|--------|--------|--------|--------|--------|--------|
+| A | 0.01   | 0.12   | 0.0367 | 0.0367 | 0.0133 | **0.2167** |
+| B | 0.05   | 0.15   | 0.05   | 0.03   | 0.0267 | **0.3067** |
+| C | 0.03   | 0.1667 | 0.04   | 0.05   | 0.02   | **0.3067** |
+| D | 0.0067 | 0.0667 | 0.03   | 0.0167 | 0.0133 | **0.1334** |
+| F | 0      | 0.02   | 0.0067 | 0.0067 | 0.0033 | **0.0367** |
+| $p_Y(y)$   | **0.0967** | **0.5234** | **0.1634** | **0.1401** | **0.0766** |
+
+As we can see the marginal distributions for $X$ and $Y$ are equivalent to the ones in the previous plots. This is because in this example $X$ and $Y$ are independent. When random variables are independent they factor as a product of the marginals, so $f_{X,Y}(x,y) = f_X(x) f_Y(y)$.
 
 ### Marginal Distributions of $n$ dimensions
 
-I often only see examples of joint distributions and marginal distributions using two random variables. However it can generalize to $n$ number of random variables. Let's do a three dimensional case to illustrate the logic but it can be applied to $n$ dimensions.
+I often only see examples of joint distributions and marginal distributions using two random variables, which is why I was really confused to see that a joint distribution can have more than two marginal distributions. However we can generalize to $n$ number of random variables. Let's do a three dimensional case to illustrate the logic but the reasoning can be extended to $n$ dimensions.
 
-There are several marginal distributions in this case: $p_X(x)$, $p_Y(y)$, $p_Z(z)$ and $p_{X,Y}(x,y)$, $p_{X,Z}(x,z)$, $p_{Y,Z}(y,z)$.
+For the joint distribution $f_{X, Y, Z}(x, y, z)$ there are several marginal distributions: $p_X(x)$, $p_Y(y)$, $p_Z(z)$ and $p_{X,Y}(x,y)$, $p_{X,Z}(x,z)$, $p_{Y,Z}(y,z)$.
 
 Let's expand on the previous example of $X$ and $Y$ and now introduce a third random variable $Z$ which has a binary outcome of {Freshman, Sophomore}. The table below represents the joint distribution, e.g. $f_{X, Y, Z}(x, y, z)$ of the three random variables. 
 
@@ -116,13 +122,13 @@ Sophomore 0.0633 0.2733 0.0733 0.0133 0.0267
 
 I hope this makes marginal distributions a bit more clear because I know when I was an undergrad, I had a bit of trouble wrapping my head around this.
 
-## Continuous Case
+## Section 3. Continuous Case
 
 Now let's look at joint and marginal distributions for continuous random variables. 
 
 ### Definitions
 
-The intuition is similar to the discrete case except that we replace summation with integration. Recall that integration is essentially a summation with a limit applied because now we're dealing with continous random variables. The joint distribution is again defined as
+The intuition is similar to the discrete case except that we replace summation with integration. Recall that integration is essentially a summation with a limit applied. The joint distribution is again defined as
 
 $$
 f_{X, Y}(x, y)
@@ -146,11 +152,11 @@ $$
 f_Y(y) = \int_x f_{X, Y}(x, y) dx.
 $$
 
-We collapse the dimension by integrating out all dimensions except the one of interest.
+Here $D$ represents the support of $X$ and $Y$. Intuitively, for the continuous case we collapse the dimension by integrating out all dimensions except the one of interest.
 
-### Example
+### Example 1
 
-#### Find Normalizing Constant
+#### a) Find Normalizing Constant
 
 For our example, let's define our joint distribution as
 
@@ -160,7 +166,7 @@ $$
 
 over the region $D = \{(x,y) \vert ~ 0 \leq x \leq 1, x^3 \leq y \leq \sqrt{x}  \}$ $.^{[1]}$
 
-First we find the normalizing constant by solving for $C$. We do this by integrating over the support of $X$ and $Y$.
+First we find the normalizing constant by solving for $C$. We do this by integrating the joint pdf over the support of $X$ and $Y$ and set the double integral to 1.
 
 $$
 C * \int_0^1 \int_{x^3}^{\sqrt{x}}  4xy - y^3 ~dy~dx = 1
@@ -178,9 +184,9 @@ $$
 C (\frac{7}{12}x^3 - \frac{1}{4}x^8 + \frac{1}{52} x^{13}) \Big|^1_0 = \frac{55}{156}
 $$
 
-Therefore $C = \frac{156}{55}$.
+We find $C = \frac{156}{55}$.
 
-#### Computing Marginals
+#### b) Computing Marginals
 
 There are two marginals of interest $f_X(x)$ and $f_Y(y)$. To find $f_X(x)$ we want to collapse the $Y$ dimension. We already did this as an intermediate step so we have
 
@@ -202,13 +208,13 @@ $$
 = \frac{156}{55} \int_0^1 2y^{5/3} - 2y^5 - y^{10/3} + y^5 dy
 $$
 
-Sort of a nasty integral but at least we arrived at the marginals. The plot of the marginal is shown below.
+This was sort of a nasty integral but at least we arrived at the marginal pdf. The plot of the marginal distribution is shown below.
 
 <img src="/assets/img/margin_y.png">
 
-### Rejection Sampling
+### Example 2: Rejection Sampling
 
-#### Compute Probabilities
+#### a) Compute Probabilities
 
 Now that we have a proper joint pdf let's calculate a probability.
 
@@ -218,11 +224,11 @@ Answer:
 
 The integral for the joint distribution turns out to be pretty intractable so we have to resort to an approximation technique like rejection sampling to solve this problem.
 
-I won't go into detail here on rejection sampling but the idea is that we randomly sample from the support of $X$ and $Y$ to get candidate points $x^{c}$ and $y^{c}$. We then randomly sample $u$ from a uniform distribution between 0 and 1 and accept samples $(x^{c},y^{c})$ where $u \leq f_{X,Y}(x^{c},y^{c})$.
+I won't go into detail here on rejection sampling but the idea is that we randomly sample a pair of points from the support of $X$ and $Y$ to get candidate points $(x^{c}, y^{c})$. We then randomly sample $u$ from a uniform distribution between 0 and 1 and accept candidate pairs $(x^{c},y^{c})$ where $u \leq f_{X,Y}(x^{c},y^{c})$.
 
 Using this method we get the $P(0 \leq X \leq 0.5, 0 \leq Y \leq 0.5)$ to be around 0.29122.
 
-### Plot of Joint Distribution
+### b) Plot of Joint Distribution
 
 <img src="/assets/img/joint_dist.png">
 
