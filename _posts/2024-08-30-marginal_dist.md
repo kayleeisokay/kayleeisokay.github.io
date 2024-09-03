@@ -205,7 +205,7 @@ The plot of $f_X(x)$ is shown below.
 For $f_Y(y)$ we flip the order of integration. To do so we need to redefine the bounds of the integral. The bounds of $X$ is then 
 
 $$
-y = \sqrt(x) \rightarrow x = y^2
+y = \sqrt{x} \rightarrow x = y^2
 $$
 
 and
