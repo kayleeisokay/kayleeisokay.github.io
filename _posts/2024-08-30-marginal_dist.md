@@ -166,6 +166,10 @@ $$
 
 over the region $D = \{(x,y) \vert ~ 0 \leq x \leq 1, x^3 \leq y \leq \sqrt{x}  \}$ $.^{[1]}$
 
+<img src="/assets/img/math_problem.png">
+
+Intuitively this means that the random variable of $X$ takes values between 1 and 0, while $Y$ takes values between $x^3$ and $\sqrt{x}$. The pdf is defined by the surface 4xy - y^3 and the area under this surface represents probability. 
+
 First we find the normalizing constant by solving for $C$. We do this by integrating the joint pdf over the support of $X$ and $Y$ and set the double integral to 1.
 
 $$
@@ -198,7 +202,21 @@ The plot of $f_X(x)$ is shown below.
 
 <img src="/assets/img/margin_x.png">
 
-For $f_Y(y)$ we flip the order of integration, so then
+For $f_Y(y)$ we flip the order of integration. To do so we need to redefine the bounds of the integral. The bounds of $X$ is then 
+
+$$
+y = \sqrt(x) \rightarrow x = y^2
+$$
+
+and
+
+$$
+y = x^3 \rightarrow x = y^{(1/3)}.
+$$
+
+For $Y$ it is $[0,1]$.
+
+So then,
 
 $$
 f_Y(y) = \frac{156}{55} \int_0^1 \int_{y^2}^{y^{1/3}}  4xy - y^3 ~dx~dy
@@ -208,7 +226,7 @@ $$
 = \frac{156}{55} \int_0^1 2y^{5/3} - 2y^5 - y^{10/3} + y^5 dy
 $$
 
-This was sort of a nasty integral but at least we arrived at the marginal pdf. The plot of the marginal distribution is shown below.
+This was sort of a nasty integral but at least we arrived at the marginal pdf for $Y$. The plot of the distribution is shown below.
 
 <img src="/assets/img/margin_y.png">
 
@@ -230,7 +248,13 @@ Using this method we get the $P(0 \leq X \leq 0.5, 0 \leq Y \leq 0.5)$ to be aro
 
 ### b) Plot of Joint Distribution
 
+Now that we've done all the hard work, let's visualize our joint distribution.
+
 <img src="/assets/img/joint_dist.png">
+
+<img src="/assets/img/contour.png">
+
+From both of the plots, we can see that most of the density is near the value of 1. All the points are clustered there and the height of the pdf is greatest around that point.
 
 ## Appendix
 1. Link to code
