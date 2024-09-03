@@ -6,7 +6,7 @@ categories: [Statistics]
 
 # Marginal and Joint Distributions
 
-## Section 1. Distribution of Single Random Variable
+## Section 1. Single Random Variable
 
 In simple cases, we have only one random variable. In the example below, we have synthetic data representing grades for a single class. Using this distribution we can calculate statistics such as the mean or variance. The height of each bar represents the frequency of grades, so roughly 60 people got an A in the class.
 
