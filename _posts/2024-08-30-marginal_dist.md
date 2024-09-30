@@ -2,6 +2,7 @@
 layout: post
 title: Marginal and Joint Distributions
 categories: [Statistics]
+excerpt: However in many real world cases we are often interested in the distribution of two or more random variables modeled together. For example we may ask what is the distribution of grades for two classes? 
 ---
 
 # Marginal and Joint Distributions

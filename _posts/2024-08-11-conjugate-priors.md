@@ -2,6 +2,7 @@
 layout: post
 title: Conjugate Distributions
 categories: [Statistics]
+excerpt: Conjugate distributions are special pairs of distributions that make computation easy.
 ---
 
 ## Bayes Theorem
