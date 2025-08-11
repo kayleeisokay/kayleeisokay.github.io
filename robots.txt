@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kayleeisokay.github.io/sitemap.xml
+Sitemap: https://kayleeisokay.github.io/al-folio/sitemap.xml
