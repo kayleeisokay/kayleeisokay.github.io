@@ -2,33 +2,37 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: kav418[@]g.harvard.edu. Cambridge, MA. <a href='https://extension.harvard.edu/academics/programs/data-science-graduate-program/'>HES</a> +  <a href='https://www.seas.harvard.edu/'>SEAS</a>.
+
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: true # crops the image to make it circular
+  more_info: 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+
+Hi, my name is Kaylee Vo. I'm a master's student in Data Science at Harvard University, splitting coursework between the <a href='https://extension.harvard.edu/academics/programs/data-science-graduate-program/'>HES</a> and <a href='https://www.seas.harvard.edu/'>SEAS</a>. My current research interests are diffusion models, stochastic differential equations and advection of plastic in our oceans. Before Harvard, I studied Economics and Statistics at <a href='https://www.stanford.edu/'>Stanford University</a>. I was a Research Fellow at the <a href='https://inequality.stanford.edu/'>Center of Poverty and Inequality</a>, where I worked on policy evaluation (causal inference). I was advised by David Rogosa (Statistics) and Mark Duggan (Economics).
+
+Although industry work is no longer my focus, during my time as a Data Scientist, I helped companies build data products. Notable products include <a href='https://pos.toasttab.com/products/capital/'>Toast Capital</a> and <a href='https://pngme.com/'>Pngme</a>'s credit scoring model.
+
+I study applied math and data science for the sheer joy of it, and I’m always open to conversations or collaborations!
