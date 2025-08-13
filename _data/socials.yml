@@ -47,7 +47,4 @@ linkedin_username: kayv0
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social: # can be any name here other than the ones already defined above
-  logo: https://img.icons8.com/m_rounded/512/substack.png
-  title: Substack
-  url: https://substack.com/@kayleevo
+medium_username: kayleeisokay # your Medium username
