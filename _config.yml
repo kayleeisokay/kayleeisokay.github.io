@@ -120,12 +120,15 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  # - name: medium.com
-  #   rss_url: https://medium.com/@al-folio/feed
-  - name: My Classmates ^^
+  - name: My Classmate - Crystal ^.^
     posts:
       - url: https://crystaldatasy.medium.com/ml-classification-model-to-predict-kickstarter-campaign-success-128c8358f0d3
         published_date: 2021-05-16
+  - name: My Classmate - Waree ^.^
+    posts:
+      - url: https://docs.google.com/presentation/d/1pxoXm3ex-QRM-S3FwwAo5v-xM0m6dZsJ2CQxt_sk6dE/edit?slide=id.p#slide=id.p
+        published_date: 2024-12-16
+
 
 # -----------------------------------------------------------------------------
 # Newsletter
