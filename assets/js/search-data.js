@@ -63,6 +63,17 @@ ninja.data = [{
             window.location.href = "/blog/2024/factorization-thm/";
           
         },
+      },{id: "post-csci-103-final-project-google-slides",
+        
+          title: 'CSCI-103 Final Project - Google Slides <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Store Sales in Ecuador Group 6 - Team Sixth Sense",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://docs.google.com/presentation/d/1pxoXm3ex-QRM-S3FwwAo5v-xM0m6dZsJ2CQxt_sk6dE/edit?slide=id.p#slide=id.p", "_blank");
+          
+        },
       },{id: "post-rejection-sampling",
         
           title: "Rejection Sampling",
