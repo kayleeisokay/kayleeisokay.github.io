@@ -8,7 +8,7 @@ description: Advection is a mechanism by which a quantity is transported by a fl
 
 ## Personal Note - Motivations
 
-Lately, I've been interested in the mathematics of fluid dynamics because of a [blog post](https://theoceancleanup.com/updates/forecasting-ocean-plastic-around-the-globe-a-deep-dive-into-modeling-the-garbage-patches/) by the Ocean Cleanup, which details their ocean modeling approach. I’ve been interested in scientific modeling for a long time, but didn’t have the background to understand it. After taking AM115, I feel like I understand it now since we covered advection briefly, using car traffic as a case. I wanted to take what I learned and apply it to study the movement of plastic pollution in water. I find myself particularly driven when self-studying for these topics. The fear of having to go back to working in the private sector as a data scientist gives me all the motivation I need.
+Lately, I've been interested in the mathematics of fluid dynamics because of a [blog post](https://theoceancleanup.com/updates/forecasting-ocean-plastic-around-the-globe-a-deep-dive-into-modeling-the-garbage-patches/) by the Ocean Cleanup, which details their ocean modeling approach. I’ve been interested in scientific modeling for a long time, but didn’t have the background to understand it. After taking AM115, I feel like I understand it now since we covered advection briefly, using car traffic as a case. I wanted to take what I learned and apply it to study the movement of plastic pollution in water. I find myself particularly driven when self-studying for these topics. The possibility of having to go back to the private sector as a data scientist gives me all the motivation I need (^^).
 
 ## Advection
 

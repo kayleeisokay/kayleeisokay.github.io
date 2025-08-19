@@ -33,6 +33,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 Hi, my name is Kaylee! I'm a master's student in Data Science at <a href='https://www.harvard.edu/'>Harvard University</a>. My current research interests are diffusion models, stochastic differential equations, and the advection of plastic in our oceans. Before Harvard, I studied Economics and Statistics at <a href='https://www.stanford.edu/'>Stanford University</a>. I was a Research Fellow at the <a href='https://inequality.stanford.edu/'>Center of Poverty and Inequality</a>, where I worked on policy evaluation (causal inference). I was advised by David Rogosa (Statistics) and Mark Duggan (Economics).
 
-Although industry work is no longer my focus, during my time as a Data Scientist, I helped companies build data products. Notable products include <a href='https://pos.toasttab.com/products/capital/'>Toast Capital</a> and <a href='https://pngme.com/'>Pngme</a>'s credit scoring model.
+Although industry work is no longer my focus, during my time as a Data Scientist, I helped companies build data products. Notable products include <a href='https://pos.toasttab.com/products/capital/'>Toast Capital</a> and <a href='https://pngme.com/'>Pngme's</a> credit scoring model.
 
 I study applied math and data science for the sheer joy of it, and I’m always open to conversations or collaborations!
