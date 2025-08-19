@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-diffusion-models",
+        },{id: "post-1d-advection",
+        
+          title: "1D Advection",
+        
+        description: "Advection is a mechanism by which a quantity is transported by a fluid flow.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/1d-advection/";
+          
+        },
+      },{id: "post-diffusion-models",
         
           title: "Diffusion Models",
         
