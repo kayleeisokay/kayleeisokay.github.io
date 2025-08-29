@@ -175,7 +175,7 @@ Figure 4 illustrates the evolution of the marginal distribution over time. The e
 
 ## Probability Flow ODE
 
-For all diffusion processes, there exists a corresponding deterministic process whose trajectories share the same marginal probability densities $\\{p_t(x)\\}_{t=0}^T$ as the SDE. This deterministic process satisfies the ODE: <a href="https://openreview.net/forum?id=PxTIG12RRHS">[5]</a>
+For all diffusion processes, there exists a corresponding deterministic process whose trajectories share the same marginal probability densities $\\{p_t(x)\\}_{t=0}^T$ as the SDE. This deterministic process satisfies the ODE [5]:
 
 \begin{equation}
 \frac{d x}{d t} = f(x, t) - \frac{1}{2} g^2(t)\nabla_x \log p_t(x)
