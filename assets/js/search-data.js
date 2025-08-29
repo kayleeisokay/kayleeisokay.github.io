@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-1d-advection",
+        },{id: "post-diffusion-models-differential-equations",
+        
+          title: "Diffusion Models - Differential Equations",
+        
+        description: "The forward and reverse processes of a diffusion model are governed by stochastic differential equations.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/diffusion-sde/";
+          
+        },
+      },{id: "post-1d-advection",
         
           title: "1D Advection",
         
