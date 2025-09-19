@@ -133,7 +133,7 @@ ninja.data = [{
         
           title: 'ML Classification Model to Predict Kickstarter Campaign Success | by Crystal Huang |... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "Everyone loves the idea of being clairvoyant, yet not everyone knows we have this hidden ability by using Machine Learning ;) We’ve learned supervised learning in regression a few weeks ago. And in…",
+        description: "ML Classification Model to Predict Kickstarter Campaign Success “Predicting the future isn’t magic, it’s artificial intelligence.” — Dave Waters Everyone loves the idea of being …",
         section: "Posts",
         handler: () => {
           
