@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-diffusion-models-differential-equations",
+        },{id: "post-neural-operators",
+        
+          title: "Neural Operators",
+        
+        description: "An introduction to neural operators, a class of deep learning models designed to learn mappings between infinite-dimensional function spaces.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/neural-operators/";
+          
+        },
+      },{id: "post-diffusion-models-differential-equations",
         
           title: "Diffusion Models - Differential Equations",
         
