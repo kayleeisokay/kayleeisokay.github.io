@@ -2,19 +2,30 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: "Kaylee Y. Vo"
 first_name: Kaylee
 middle_name: Y.
 last_name: Vo
 contact_note: 
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: "Kaylee Y. Vo - Data Scientist, AI Researcher, and Applied Mathematician. Portfolio showcasing projects in machine learning, statistics, and data science."
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: kaylee-vo, data-science, harvard, stanford, portfolio-website # add your own keywords or leave empty
+keywords: kaylee-vo, data-science, machine-learning, ai, artificial-intelligence, statistics, applied-math, harvard, stanford, portfolio
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ✏️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
+# -----------------------------------------------------------------------------
+# Jekyll SEO Tag Configuration
+# -----------------------------------------------------------------------------
+
+seo:
+  title: true
+  description: true
+  image: "/assets/img/prof_pic.jpg"  # Make sure this image exists!
+  image_alt: "Kaylee Y. Vo - Data Scientist and AI Researcher"
+  twitter:
+    card: summary_large_image
 
 url: https://kayleeisokay.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -61,9 +72,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: "/assets/img/prof_pic.jpg" # Path to the image used for Open Graph and Schema.org
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -214,6 +225,7 @@ plugins:
   - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
+  - jekyll-seo-tag
   - jemoji
 
 # Sitemap settings
