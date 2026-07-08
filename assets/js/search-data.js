@@ -140,11 +140,11 @@ ninja.data = [{
             window.location.href = "/blog/2024/conjugate-priors/";
           
         },
-      },{id: "post-just-a-moment",
+      },{id: "post-medium",
         
-          title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'Medium <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "",
+        description: "ML Classification Model to Predict Kickstarter Campaign Success “Predicting the future isn’t magic, it’s artificial intelligence.” — Dave Waters Everyone loves the idea of being …",
         section: "Posts",
         handler: () => {
           
@@ -156,16 +156,20 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-will-be-joining-eleutherai-as-an-intern-conducting-research-on-ai-interpretability-mechanistic-interpretability",
+          title: 'I will be joining EleutherAI as an intern, conducting research on AI interpretability...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-will-be-presenting-my-research-on-pinns-at-stai-x-2026-at-harvard",
+          title: 'I will be presenting my research on PINNs at STAI-X 2026 at Harvard....',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-will-be-presenting-my-master-s-capstone-research-at-uc-berkeley-s-agentic-ai-summit-2026",
+          title: 'I will be presenting my master’s capstone research at UC Berkeley’s Agentic AI...',
+          description: "",
+          section: "News",},{id: "news-i-will-be-joining-sandia-national-laboratories-as-a-research-data-scientist-focusing-on-sciml-and-ai-safety",
+          title: 'I will be joining Sandia National Laboratories as a Research Data Scientist, focusing...',
+          description: "",
+          section: "News",},{id: "news-i-will-be-presenting-at-scml-2026-in-the-u-k",
+          title: 'I will be presenting at SCML 2026 in the U.K.!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
