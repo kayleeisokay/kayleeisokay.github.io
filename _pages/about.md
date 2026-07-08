@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -31,11 +31,8 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-Hi, my name is Kaylee! I'm a master's student in Data Science at <a href='https://www.harvard.edu/'>Harvard University</a>. Currently, I work as a research assistant for Pavlos Protopapas at <a href='https://www.seas.harvard.edu/'>Harvard John A. Paulson School of Engineering and Applied Sciences</a>, where I research new physics-informed neural networks to solve ordinary and partial differential equations.
+Hi, my name is Kaylee! I recently graduated from <a href='https://www.harvard.edu/'>Harvard </a> with my master’s degree in Data Science. At Harvard, I worked with Prof. Pavlos Protopapas (<a href='https://www.seas.harvard.edu/'>SEAS</a>) to research new physics-informed neural networks (preprint soon, accepted to SCML 2026). I also worked as a Graduate Teaching Fellow in Applied Mathematics with Prof. Zhiming Kuang (<a href='https://www.seas.harvard.edu/'>SEAS</a>).
 
-Before Harvard, I studied Economics and Statistics at <a href='https://www.stanford.edu/'>Stanford University</a>. I was a Research Fellow at the <a href='https://inequality.stanford.edu/'>Center of Poverty and Inequality</a>, where I worked on policy evaluation (causal inference). I was advised by David Rogosa (Statistics) and Mark Duggan (Economics). I will always be grateful for their mentorship and support. 
+Before Harvard, I studied Economics and Statistics at Stanford. I was a Research Fellow at the Center on Poverty and Inequality, where I worked on policy evaluation (causal inference). I was co-advised by David Rogosa (<a href='https://statistics.stanford.edu/'>Statistics</a>) and Mark Duggan (<a href='https://economics.stanford.edu/'>Economics</a>). 
 
 I also have industry experience as a Data Scientist, helping companies build data products. Notable products include <a href='https://pos.toasttab.com/products/capital/'>Toast Capital</a> and <a href='https://pngme.com/'>Pngme's</a> credit scoring model.
-
-I study applied math and data science for the sheer joy of it, and I’m always open to conversations or collaborations!
-
