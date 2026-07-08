@@ -36,3 +36,5 @@ Hi, my name is Kaylee! I recently graduated from <a href='https://www.harvard.ed
 Before Harvard, I studied Economics and Statistics at Stanford. I was a Research Fellow at the Center on Poverty and Inequality, where I worked on policy evaluation (causal inference). I was co-advised by David Rogosa (<a href='https://statistics.stanford.edu/'>Statistics</a>) and Mark Duggan (<a href='https://economics.stanford.edu/'>Economics</a>). 
 
 I also have industry experience as a Data Scientist, helping companies build data products. Notable products include <a href='https://pos.toasttab.com/products/capital/'>Toast Capital</a> and <a href='https://pngme.com/'>Pngme's</a> credit scoring model.
+
+<b><u>Research Interests</u>: Scientific Machine Learning, AI Interpretability</b>
